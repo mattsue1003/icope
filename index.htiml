@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>健康活動推薦</title>
+    <meta name="description" content="健康活動推薦 - 預防肌肉退化、失智症、憂鬱症的運動指南">
+    <meta name="keywords" content="健康運動,長輩活動,預防失智,肌肉退化,蝴蝶擁抱法">
+    <title>健康活動推薦 - 長輩運動指南</title>
     <style>
         * {
             margin: 0;
@@ -12,10 +14,11 @@
         }
 
         body {
-            font-family: 'Microsoft YaHei', 'PingFang TC', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', 'PingFang TC', 'Helvetica Neue', Arial, sans-serif;
             background: #f8f8f8;
             line-height: 1.6;
             padding: 20px;
+            min-height: 100vh;
         }
 
         .container {
@@ -118,7 +121,7 @@
         .activity-link {
             display: inline-block;
             background: #dc143c;
-            color: white;
+            color: white !important;
             text-decoration: none;
             padding: 15px 25px;
             font-size: 1.3em;
@@ -128,29 +131,51 @@
             transition: all 0.3s ease;
             margin: 10px auto;
             min-width: 200px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        .activity-link:hover {
+        .activity-link:visited {
+            color: white !important;
+        }
+
+        .activity-link:hover,
+        .activity-link:focus {
             background: #b91c3c;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            outline: none;
+        }
+
+        .activity-link:active {
+            transform: translateY(-1px);
         }
 
         .activity-section:nth-child(2) .activity-link {
             background: #ffdd00;
-            color: #000;
+            color: #000 !important;
         }
 
-        .activity-section:nth-child(2) .activity-link:hover {
+        .activity-section:nth-child(2) .activity-link:visited {
+            color: #000 !important;
+        }
+
+        .activity-section:nth-child(2) .activity-link:hover,
+        .activity-section:nth-child(2) .activity-link:focus {
             background: #ffd700;
         }
 
         .activity-section:nth-child(3) .activity-link {
             background: #0066cc;
-            color: white;
+            color: white !important;
         }
 
-        .activity-section:nth-child(3) .activity-link:hover {
+        .activity-section:nth-child(3) .activity-link:visited {
+            color: white !important;
+        }
+
+        .activity-section:nth-child(3) .activity-link:hover,
+        .activity-section:nth-child(3) .activity-link:focus {
             background: #0052a3;
         }
 
@@ -232,7 +257,9 @@
                 <h2 class="activity-title">預防肌肉退化</h2>
                 <a href="https://www.youtube.com/shorts/qXZa8WAhoKA" 
                    target="_blank" 
-                   class="activity-link">
+                   rel="noopener noreferrer"
+                   class="activity-link"
+                   aria-label="觀看預防肌肉退化運動影片">
                    觀看運動影片
                 </a>
             </section>
@@ -241,7 +268,9 @@
                 <h2 class="activity-title">預防失智症</h2>
                 <a href="https://youtu.be/HpTaqv31zcs?si=E80kYpug5Pm0emd9" 
                    target="_blank" 
-                   class="activity-link">
+                   rel="noopener noreferrer"
+                   class="activity-link"
+                   aria-label="觀看預防失智症運動影片">
                    觀看運動影片
                 </a>
             </section>
@@ -251,7 +280,9 @@
                 <h2 class="activity-title">預防憂鬱</h2>
                 <a href="https://www.youtube.com/watch?v=lWkCS-g7Y-g" 
                    target="_blank" 
-                   class="activity-link">
+                   rel="noopener noreferrer"
+                   class="activity-link"
+                   aria-label="觀看蝴蝶擁抱法影片">
                    蝴蝶擁抱法
                 </a>
             </section>
